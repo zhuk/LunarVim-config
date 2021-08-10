@@ -84,4 +84,21 @@ lvim.builtin.treesitter.highlight.enabled = true
 --   w = { "<cmd>Trouble lsp_workspace_diagnostics<cr>", "Diagnosticss" },
 -- }
 
+vim.opt.relativenumber = true
+vim.opt.completeopt = { "menuone", "noselect", "noinsert"}
+
 vim.cmd("nnoremap <Leader><space> <C-^>")
+
+vim.g.clipboard = {
+  name = "win32yank-wsl",
+  copy = {
+    ["+"] = "win32yank.exe -i --crlf",
+    ["*"] = "win32yank.exe -i --crlf"
+  },
+  paste = {
+    ["+"] = "win32yank.exe -o --lf",
+    ["*"] = "win32yank.exe -o --lf"
+  },
+  cache_enable = 0,
+}
+
