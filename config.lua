@@ -87,7 +87,7 @@ lvim.builtin.treesitter.highlight.enabled = true
 vim.opt.relativenumber = true
 vim.opt.completeopt = { "menuone", "noselect", "noinsert"}
 
-vim.cmd("nnoremap <Leader><space> <C-^>")
+vim.cmd("nnoremap <space><space> <C-^>")
 
 vim.g.clipboard = {
   name = "win32yank-wsl",
@@ -101,4 +101,7 @@ vim.g.clipboard = {
   },
   cache_enable = 0,
 }
+
+-- require "utils.plugin_loader"
+-- print(plugin_loader.packer.package_root)
 
