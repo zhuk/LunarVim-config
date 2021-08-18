@@ -1,7 +1,7 @@
 #!/bin/sh
 #Set Variable to master is not set differently
 #LVBRANCH="${LVBRANCH:-master}"
-LVBRANCH="${LVBRANCH:-rolling}"
+LVBRANCH="${LVBRANCH:-dev}"
 USER_BIN_DIR="/usr/local/bin"
 set -o nounset # error when referencing undefined variable
 set -o errexit # exit when command fails
